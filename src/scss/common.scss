@@ -1,0 +1,13 @@
+*{
+    font-family: Gilroy;
+    color: $color-text;
+}
+body{
+    background-color: $color-bg-light;
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 2rem;
+}

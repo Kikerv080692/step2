@@ -1,0 +1,13 @@
+.container--header{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+.header{
+    &__menu{
+        font-weight: 600;
+        font-size: 2.5rem;
+    }
+}
