@@ -1,0 +1,18 @@
+.footer{
+    border-top: 1px solid #252525;;
+    &__title{
+        padding-top: 2rem;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: normal;
+        text-align: center;
+    }
+    &__social-media{
+        gap: 1rem;
+        display: flex;
+        justify-content: center;
+        padding-top: 2rem;
+        margin-bottom: 2rem;
+    }
+
+}

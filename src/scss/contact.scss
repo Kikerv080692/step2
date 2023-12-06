@@ -1,0 +1,79 @@
+.join{
+    &__title{
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 400;
+            line-height: normal;
+            text-transform: uppercase;
+            margin-bottom: 2rem;
+            padding-top: 6rem;
+        &-text{
+            text-align: center;
+            font-size: 4rem;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            text-transform: uppercase;
+            margin-bottom: 1.5rem;
+        }
+    }
+    &__btn{
+        display: flex;
+        padding: 1rem 3rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        align-self: stretch;
+        color: #FFF;
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+        border-radius: 5rem;
+        background: #252525;
+    }
+}
+.contact{
+    &__title{
+        text-align: center;
+        font-size: 8rem;
+        font-weight: 300;
+        line-height: normal;
+        text-transform: uppercase;
+        padding-top: 3rem;
+        margin-bottom: 3rem;
+        &--name{
+        text-align: center;
+        font-size: 5rem;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+        margin-bottom: 3rem;
+        }
+        &--text{   
+        text-align: center;
+        font-size: 3rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        margin-bottom: 3rem;
+        }
+    }
+    &__btn{
+        font-size: 1.8rem;
+        font-weight: 400;
+        line-height: normal;
+        text-transform: capitalize;
+        display: flex;
+        padding: 1rem 3rem;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        align-self: stretch;
+        border-radius: 5rem;
+        background: #252525;
+        color: $color-text-light;
+        margin-bottom: 5rem;
+        
+    }
+}

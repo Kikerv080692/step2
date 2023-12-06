@@ -1,13 +1,60 @@
-.container--header{
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+.container--header {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
-.header{
-    &__menu{
-        font-weight: 600;
-        font-size: 2.5rem;
+.header {
+  &__menu {
+    font-weight: 600;
+    font-size: 2.5rem;
+  }
+  &__logo-text {
+    display: none;
+  }
+}
+.container--page-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page-title {
+  &__title {
+    font-size: 5.7rem;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+  &__subtitle {
+    font-size: 5.7rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    margin-bottom: 3rem;
+  }
+  &__link {
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    &__logo {
+      display: flex;
+      align-items: center;
+
+      &-text {
+        display: inline;
+        font-size: 3.5rem;
+        line-height: normal;
+        letter-spacing: -0.7px;
+        text-transform: uppercase;
+        margin-left: 1rem;
+        strong {
+          font-weight: 800;
+          text-transform: none;
+        }
+      }
     }
+  }
 }
