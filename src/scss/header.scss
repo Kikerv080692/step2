@@ -57,4 +57,16 @@
       }
     }
   }
+  .page-title{
+    &__title{
+      font-size: 12rem;
+    }
+    &__subtitle{
+      font-size: 12rem;
+    }
+    &__link{
+      height: 4rem;
+      margin-bottom: 4rem;
+    }
+  }
 }

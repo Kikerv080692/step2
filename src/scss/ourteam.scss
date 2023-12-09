@@ -1,36 +1,80 @@
 
-    .our-team{
-        &__title{
-            font-size: 8rem;
-            font-weight: 300;
-            line-height: normal;
-            text-transform: uppercase;
-            display: flex;
-            justify-content: center;
-        }
+.our-team {
+  padding-top: 3rem;
+  &__item{
+    margin-bottom: 4rem;
+  }
+  &__title {
+    margin-bottom: 5rem;
+    font-size: 8rem;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    text-align: center;
+  }
+  &__name {
+    margin-bottom: 0.5rem;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 800;
+    line-height: normal;
+    text-transform: uppercase;
+    &-prof {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: 400;
+      line-height: normal;
+      margin-bottom: 1.5rem;
     }
-   .our-team{
-       &__name{
-        padding-top: 7rem;
-        margin-bottom: 0.5rem;
-        text-align: center;
-        font-size: 3rem;
-        font-weight: 800;
-        line-height: normal;
-        text-transform: uppercase;
-        &-prof{
-            text-align: center;
-            font-size: 2rem;
-            font-weight: 400;
-            line-height: normal;
-            margin-bottom: 1.5rem;
-        }
-       }
-      &__social-media{
-        padding-top: 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
+  }
+  &__social-media {
+    padding-top: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .our-team {
+    &__wrapper{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    &__item{
+      width: calc(50% - 2rem);
+    }
+    &__title {
+      font-size: 15rem;
+    }
+    &__name {
+      text-align: left;
+      &-prof {
+        text-align: left;
       }
-   }
+    }
+    &__social-media{
+        display: flex;
+        justify-content: flex-end;
+        gap: 1rem;
+    }
+  }
+}
+@media screen and (min-width: 1200px){
+  .our-team{
+    &__title{
+      font-size: 21rem;
+      letter-spacing: 8.48px;
+    }
+    &__wrapper{
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 4rem;
+    }
+    &__item{
+      width: auto;
+      flex: 1 0 calc(24% - 2rem);
+    }
+  }
+}

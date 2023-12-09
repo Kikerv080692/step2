@@ -1,79 +1,175 @@
-.join{
-    &__title{
-            text-align: center;
-            font-size: 3rem;
-            font-weight: 400;
-            line-height: normal;
-            text-transform: uppercase;
-            margin-bottom: 2rem;
-            padding-top: 6rem;
-        &-text{
-            text-align: center;
-            font-size: 4rem;
-            font-style: normal;
-            font-weight: 700;
-            line-height: normal;
-            text-transform: uppercase;
-            margin-bottom: 1.5rem;
+.join {
+  &__title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 2rem;
+    padding-top: 6rem;
+    &-text {
+      text-align: center;
+      font-size: 4rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__btn-wrapper{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 5rem;
+  }
+  &__btn {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 7rem;
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    border-radius: 3.5rem;
+    gap: 1rem;
+      background: $color-bg-dark;
+      color: $color-text-light;
+      text-align: right;
+     
+    
+  }
+}
+.contact {
+  padding-bottom: 5rem;
+  border-top: 1px solid $color-text;
+  &__title {
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 300;
+    line-height: normal;
+    text-transform: uppercase;
+    padding-top: 3rem;
+    margin-bottom: 3rem;
+    &--name {
+      text-align: center;
+      font-size: 5rem;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      margin-bottom: 3rem;
+    }
+    &--text {
+      text-align: center;
+      font-size: 3rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 3rem;
+    }
+  }
+  &__btn-wrapper{
+    display: flex;
+    justify-content: center;
+  }
+  &__btn {
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    height: 7rem;
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    border-radius: 3.5rem;
+    gap: 1rem;
+      background: $color-bg-dark;
+      color: $color-text-light;
+      text-align: right;
+    
+  }
+}
+@media screen and (min-width: 768px) {
+    .join{
+        &__title{
+            text-align: left;
+            &-text{
+                font-size: 6.4rem;
+                text-align: left;
+            }
+        }
+        &__btn{
+            justify-content: flex-start;
+            flex: 0 0 auto;
+            margin-bottom: 5rem;
         }
     }
-    &__btn{
-        display: flex;
-        padding: 1rem 3rem;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        align-self: stretch;
-        color: #FFF;
-        font-size: 1.8rem;
-        font-weight: 400;
-        line-height: normal;
-        text-transform: capitalize;
-        border-radius: 5rem;
-        background: #252525;
+    .contact{
+      border-top: 1px solid $color-bg-dark;
+        &__title{
+            font-size: 15rem;
+            &--name{
+                font-size: 6.4rem;
+            }
+            &--text{
+                font-size: 3.4rem;
+            }
+
+        }
+        &__btn{
+          flex: 0 0 auto;
+        }
     }
 }
-.contact{
+@media screen and (min-width: 1200px){
+  .join{
+    &__wrapper{
+      flex: 1 1 48%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 15px;
+      
+    }
+  }
+  .container__contact{
+   &-wrapper{
+    display: flex;
+    flex-direction: row;
+    padding-left: 0;
+    padding-right: 0;
+    padding-top: 10rem;
+    margin-bottom: 5rem;
+    gap: 4rem;
+   }
+  }
+  .contact__title{
+     &-wrapper{
+      width: 50%;
+      h2{
+        padding-top: 0;
+        text-align: left;
+      }
+    }
+  }
+  .contact{
+    &__wrapper{
+      width: 50%; 
+    }
     &__title{
-        text-align: center;
-        font-size: 8rem;
-        font-weight: 300;
-        line-height: normal;
-        text-transform: uppercase;
-        padding-top: 3rem;
-        margin-bottom: 3rem;
-        &--name{
-        text-align: center;
-        font-size: 5rem;
-        font-weight: 700;
-        line-height: normal;
-        text-transform: uppercase;
-        margin-bottom: 3rem;
-        }
-        &--text{   
-        text-align: center;
-        font-size: 3rem;
-        font-style: normal;
-        font-weight: 500;
-        line-height: normal;
-        margin-bottom: 3rem;
-        }
+      &--name{
+        text-align: left;
+      }
+      &--text{
+        text-align: left;
+      }
     }
-    &__btn{
-        font-size: 1.8rem;
-        font-weight: 400;
-        line-height: normal;
-        text-transform: capitalize;
-        display: flex;
-        padding: 1rem 3rem;
-        justify-content: center;
-        align-items: center;
-        gap: 1rem;
-        align-self: stretch;
-        border-radius: 5rem;
-        background: #252525;
-        color: $color-text-light;
-        margin-bottom: 5rem;
-        
+    &__btn-wrapper{
+      justify-content: left;
     }
+  }
 }

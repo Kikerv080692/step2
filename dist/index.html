@@ -33,7 +33,9 @@
               </clipPath>
             </defs>
           </svg>
-          <span class="header__logo-text"><strong>Dianne </strong>Studio<sup>&reg;</sup></span>
+          <span class="header__logo-text"
+            ><strong>Dianne </strong>Studio<sup>&reg;</sup></span
+          >
         </a>
         <a href="#" class="header__menu"> MENU </a>
       </div>
@@ -71,12 +73,16 @@
     <section class="about-me">
       <picture class="about-me__foto">
         <source
-          media="(max-width:767px)"
+          media="(max-width:768px)"
           srcset="./images/headerFoto/Hero_photo.jpg"
         />
         <source
-        media="(min-width:768px)"
-        srcset="./images/headerFoto/Hero_photo_tablet.jpg"
+          media="(max-width:1199px)"
+          srcset="./images/headerFoto/Hero_photo_tablet.jpg"
+        />
+        <source
+        media="(min-width:1200px)"
+        srcset="./images/headerFoto/Hero_photo_desktop.jpg"
       />
         <img src="./images/headerFoto/Hero_photo.jpg" alt="" />
       </picture>
@@ -511,88 +517,139 @@
         <h2 class="selected-work__title">Selected work</h2>
       </div>
       <div class="container container-selected">
-        <div class="selected-work__foto">
-          <img src="./images/selectedWork/Frame 7.jpg" alt="" />
-        </div>
-        <div class="selected-work__foto">
-          <img src="./images/selectedWork/Frame 8.jpg" alt="" />
-        </div>
-        <div class="selected-work__title">
-          <h3 class="selected-work__title-text">Trinity</h3>
-          <div class="selected-work__title-wrapper">
-            <a class="selected-work__title-btn" href="#">Digital Design</a>
-            <a class="selected-work__title-btn" href="#">2022</a>
+        <div class="selected-work__wrapper">
+        <picture class="selected-work__box">
+          <source
+          media="(max-width:768px)"
+          srcset="./images/selectedWork/Frame_7.jpg"
+        />
+          <source
+          media="(max-width:1199px)"
+          srcset="./images/selectedWork/Frame_tablet1.jpg"
+        />
+          <source
+          media="(min-width:1200px)"
+          srcset="./images/selectedWork/Frame_desktop7.jpg"
+        />
+          <img src="./images/selectedWork/Frame_7.jpg" alt="" />
+        </picture>
+      
+          <picture class="selected-work__box">
+            <source
+            media="(max-width:768px)"
+            srcset="./images/selectedWork/Frame_8.jpg"
+          />
+            <source
+            media="(max-width:1199px)"
+            srcset="./images/selectedWork/Frame_tablet2.jpg"
+          />
+          <source
+          media="(min-width:1200px)"
+          srcset="./images/selectedWork/Frame_desktop8.jpg"
+        />
+            <img src="./images/selectedWork/Frame_8.jpg" alt="" />
+          </picture>
+        
+        <div class="selected-work__box">
+          <h3 class="selected-work__box-text">Trinity</h3>
+          <div class="selected-work__box-wrapper">
+            <a class="selected-work__box-btn" href="#">Digital Design</a>
+            <a class="selected-work__box-btn" href="#">2022</a>
           </div>
-          <div class="selected-work__title-wrapper selected-work__title-wrapper--right">
-            <a href="#" class="selected-work__title-btn selected-work__title-btn--dark">
-                Discover 
-                <svg
+          <div class="selected-work__box-wrapper selected-work__box-wrapper--right">
+            <a href="#" class="selected-work__box-btn selected-work__box-btn--dark">
+              Discover
+              <svg
                   width="24"
                   height="17"
                   viewBox="0 0 24 17"
                   fill="none"
                 >
-                  <path
-                    d="M21.5879 8.66699L1.58789 8.66699"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="square"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M16.333 15.3335L22.9997 8.66683L16.333 2.00016"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="square"
-                    stroke-linejoin="round"
-                  />
-                </svg>
-              </a>
-          </div>
-        </div>
-        <div class="selected-work__foto">
-          <img src="./images/selectedWork/Frame 9.jpg" alt="" />
-        </div>
-        <div class="selected-work__foto">
-          <img src="./images/selectedWork/Frame 10.jpg" alt="" />
-        </div>
-        <div class="selected-work__title">
-          <h3 class="selected-work__title-text">Morpheus</h3>
-          <div class="selected-work__title-wrapper">
-            <a class="selected-work__title-btn" href="#">Digital Design</a>
-            <a class="selected-work__title-btn" href="#">2023</a>
-          </div>
-          <div class="selected-work__title-wrapper selected-work__title-wrapper--right">
-            <a href="#" class="selected-work__title-btn selected-work__title-btn--dark">
-               Discover
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="17"
-                  viewBox="0 0 24 17"
-                  fill="none"
-                >
-                  <path
-                    d="M21.5879 8.66699L1.58789 8.66699"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="square"
-                    stroke-linejoin="round"
-                  />
-                  <path
-                    d="M16.333 15.3335L22.9997 8.66683L16.333 2.00016"
-                    stroke="white"
-                    stroke-width="2"
-                    stroke-linecap="square"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                <path
+                  d="M21.5879 8.66699L1.58789 8.66699"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16.333 15.3335L22.9997 8.66683L16.333 2.00016"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                  stroke-linejoin="round"
+                />
+              </svg>
             </a>
           </div>
         </div>
-        <div class="selected-work__last-btn">
-          <a href="#">All Work</a>
+        <picture class="selected-work__box">
+          <source
+          media="(max-width:768px)"
+          srcset="./images/selectedWork/Frame_9.jpg"
+        />
+          <source
+          media="(max-width:1199px)"
+          srcset="./images/selectedWork/Frame_tablet3.jpg"
+        />
+          <source
+          media="(min-width:1200px)"
+          srcset="./images/selectedWork/Frame_desktop9.jpg"
+        />
+          <img src="./images/selectedWork/Frame_9.jpg" alt="" />
+        </picture>
+        <picture class="selected-work__box">
+          <source
+          media="(max-width:768px)"
+          srcset="./images/selectedWork/Frame_10.jpg"
+        />
+          <source
+          media="(max-width:1199px)"
+          srcset="./images/selectedWork/Frame_tablet4.jpg"
+        />
+          <source
+          media="(min-width:1200px)"
+          srcset="./images/selectedWork/Frame_desktop10.jpg"
+        />
+          <img src="./images/selectedWork/Frame_10.jpg" alt="" />
+        </picture>
+        <div class="selected-work__box">
+          <h3 class="selected-work__box-text">Morpheus</h3>
+          <div class="selected-work__box-wrapper">
+            <a class="selected-work__box-btn" href="#">Digital Design</a>
+            <a class="selected-work__box-btn" href="#">2023</a>
+          </div>
+          <div class="selected-work__box-wrapper selected-work__box-wrapper--right">
+            <a href="#" class="selected-work__box-btn selected-work__box-btn--dark">
+              Discover
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="17"
+                viewBox="0 0 24 17"
+                fill="none"
+              >
+                <path
+                  d="M21.5879 8.66699L1.58789 8.66699"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16.333 15.3335L22.9997 8.66683L16.333 2.00016"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
         </div>
+      </div>
+      <div class="selected-work__last-btn">
+        <a href="#">All Work</a>
       </div>
     </section>
     <section class="clients">
@@ -682,7 +739,7 @@
             <div class="clients__title--footer-prof">Marketing Coordinator</div>
           </div>
         </div>
-        <div class="clients__item2">
+        <div class="clients__item">
           <div class="clients__title--logo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -754,7 +811,7 @@
             </div>
           </div>
         </div>
-        <div class="clients__item3">
+        <div class="clients__item">
           <div class="clients__title--logo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -786,7 +843,7 @@
             <div class="clients__title--footer-prof">Scrum Master</div>
           </div>
         </div>
-        <div class="clients__item4">
+        <div class="clients__item">
           <div class="clients__title--logo">
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -973,15 +1030,27 @@
       </div>
     </section>
     <section class="our-team">
-      <div class="container">
+      <div class="container container--our-team">
         <h2 class="our-team__title">OUR Team</h2>
-        <div class="container container-our-team">
+        <div class="our-team__wrapper">
           <div class="our-team__item">
             <h2 class="our-team__name">Tyra Dhillon</h2>
             <h4 class="our-team__name-prof">Creative Director</h4>
-            <div class="our-team__foto">
+            <picture class="our-team__foto">
+              <source
+              media="(max-width:768px)"
+              srcset="./images/ourteam/1.jpg"
+            />
+            <source
+            media="(max-width:1199px)"
+            srcset="./images/ourteam/tablet1.jpg"
+          />
+              <source
+              media="(min-width:1200px)"
+              srcset="./images/ourteam/photo_desktop1.jpg"
+            />
               <img src="./images/ourteam/1.jpg" alt="" />
-            </div>
+            </picture>
             <div class="our-team__social-media">
               <a>
                 <svg
@@ -1044,9 +1113,21 @@
           <div class="our-team__item">
             <h2 class="our-team__name">Darcel Ballentine</h2>
             <h4 class="our-team__name-prof">Brand Designer</h4>
-            <div class="our-team__foto">
+            <picture class="our-team__foto">
+              <source
+              media="(max-width:768px)"
+              srcset="./images/ourteam/2.jpg"
+            />
+            <source
+            media="(max-width:1199px)"
+            srcset="./images/ourteam/tablet2.jpg"
+          />
+              <source
+              media="(min-width:1200px)"
+              srcset="./images/ourteam/photo_desktop2.jpg"
+            />
               <img src="./images/ourteam/2.jpg" alt="" />
-            </div>
+            </picture>
             <div class="our-team__social-media">
               <a>
                 <svg
@@ -1109,9 +1190,21 @@
           <div class="our-team__item">
             <h2 class="our-team__name">Brittni Lando</h2>
             <h4 class="our-team__name-prof">Fashion Designer</h4>
-            <div class="our-team__foto">
+            <picture class="our-team__foto">
+              <source
+              media="(max-width:768px)"
+              srcset="./images/ourteam/3.jpg"
+            />
+            <source
+            media="(max-width:1199px)"
+            srcset="./images/ourteam/tablet3.jpg"
+          />
+              <source
+              media="(min-width:1200px)"
+              srcset="./images/ourteam/photo_desktop3.jpg"
+            />
               <img src="./images/ourteam/3.jpg" alt="" />
-            </div>
+            </picture>
             <div class="our-team__social-media">
               <a>
                 <svg
@@ -1174,9 +1267,21 @@
           <div class="our-team__item">
             <h2 class="our-team__name">Roselle Ehrman</h2>
             <h4 class="our-team__name-prof">Graphic Designer</h4>
-            <div class="our-team__foto">
+            <picture class="our-team__foto">
+              <source
+              media="(max-width:768px)"
+              srcset="./images/ourteam/4.jpg"
+            />
+            <source
+            media="(max-width:1199px)"
+            srcset="./images/ourteam/tablet4.jpg"
+          />
+              <source
+              media="(min-width:1200px)"
+              srcset="./images/ourteam/photo_desktop4.jpg"
+            />
               <img src="./images/ourteam/4.jpg" alt="" />
-            </div>
+            </picture>
             <div class="our-team__social-media">
               <a>
                 <svg
@@ -1239,9 +1344,21 @@
           <div class="our-team__item">
             <h2 class="our-team__name">Jane Cooper</h2>
             <h4 class="our-team__name-prof">Creative Director</h4>
-            <div class="our-team__foto">
+            <picture class="our-team__foto">
+              <source
+              media="(max-width:768px)"
+              srcset="./images/ourteam/5.jpg"
+            />
+            <source
+            media="(max-width:1199px)"
+            srcset="./images/ourteam/tablet5.jpg"
+          />
+              <source
+              media="(min-width:1200px)"
+              srcset="./images/ourteam/photo_desktop5.jpg"
+            />
               <img src="./images/ourteam/5.jpg" alt="" />
-            </div>
+            </picture>
             <div class="our-team__social-media">
               <a>
                 <svg
@@ -1303,12 +1420,22 @@
           </div>
           <div class="our-team__item">
             <h2 class="our-team__name">Robert Fox</h2>
-
             <h4 class="our-team__name-prof">Brand Designer</h4>
-
-            <div class="our-team__foto">
+            <picture class="our-team__foto">
+              <source
+              media="(max-width:768px)"
+              srcset="./images/ourteam/6.jpg"
+            />
+            <source
+            media="(max-width:1199px)"
+            srcset="./images/ourteam/tablet6.jpg"
+          />
+              <source
+              media="(min-width:1200px)"
+              srcset="./images/ourteam/photo_desktop6.jpg"
+            />
               <img src="./images/ourteam/6.jpg" alt="" />
-            </div>
+            </picture>
             <div class="our-team__social-media">
               <a>
                 <svg
@@ -1368,60 +1495,96 @@
               </a>
             </div>
           </div>
+          <div class="join__wrapper">
+            <h2 class="join__title">Join the team</h2>
+            <h3 class="join__title-text">
+              Desire to influence the future of branding?
+            </h3>
+            <div class="join__btn-wrapper">
+              <a href="#" class="join__btn"
+                >find job
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="17"
+                  viewBox="0 0 24 17"
+                  fill="none"
+                >
+                  <path
+                    d="M21.2939 8.66602L1.29395 8.66602"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M16.0391 15.333L22.7057 8.66634L16.0391 1.99967"
+                    stroke="white"
+                    stroke-width="2"
+                    stroke-linecap="square"
+                    stroke-linejoin="round"
+                  />
+                </svg>
+              </a>
+            </div>
+  
+          </div>
         </div>
       </div>
     </section>
-    <section class="join">
-      <div class="container container-join">
-        <h2 class="join__title">Join the team</h2>
-        <h3 class="join__title-text">Desire to influence the future of branding?</h3>
-        <a href="#" class="join__btn">find job
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="17"
-            viewBox="0 0 24 17"
-            fill="none"
-          >
-            <path
-              d="M21.2939 8.66602L1.29395 8.66602"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="square"
-              stroke-linejoin="round"
-            />
-            <path
-              d="M16.0391 15.333L22.7057 8.66634L16.0391 1.99967"
-              stroke="white"
-              stroke-width="2"
-              stroke-linecap="square"
-              stroke-linejoin="round"
-            />
-          </svg>
-        </a>
-      </div>
-    </section>
+    
+      
+    
     <section class="contact">
-      <div class="container">
-        <h2 class="contact__title">Contact</h2>
-        <h3 class="contact__title--name">
-          Let's start building your brand's unique story together.
-        </h3>
-        <p class="contact__title--text">
-          Want to see what a difference a strong brand can make? Request a
-          consultation today.
-        </p>
-        <a href="#"  class="contact__btn">Get in touch
-          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="17" viewBox="0 0 24 17" fill="none">
-            <path d="M21.2939 8.66602L1.29395 8.66602" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-            <path d="M16.0391 15.333L22.7057 8.66634L16.0391 1.99967" stroke="white" stroke-width="2" stroke-linecap="square" stroke-linejoin="round"/>
-          </svg>
-        </a>
+      <div class="container ">
+        <div class=" container container__contact-wrapper">
+          <div class="contact__title-wrapper">
+            <h2 class="contact__title">Contact</h2>
+          </div>
+         <div class="contact__wrapper">
+          <h3 class="contact__title--name">
+            Let's start building your brand's unique story together.
+          </h3>
+          <p class="contact__title--text">
+            Want to see what a difference a strong brand can make? Request a
+            consultation today.
+          </p>
+          <div class="contact__btn-wrapper">
+            <a href="#" class="contact__btn"
+              >Get in touch
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="17"
+                viewBox="0 0 24 17"
+                fill="none"
+              >
+                <path
+                  d="M21.2939 8.66602L1.29395 8.66602"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M16.0391 15.333L22.7057 8.66634L16.0391 1.99967"
+                  stroke="white"
+                  stroke-width="2"
+                  stroke-linecap="square"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
       </div>
     </section>
     <footer class="footer">
-      <div class="container">
-        <div class="footer__title">© Made by Kunturi Design. All rights reserved.</div>
+      <div class="container container-footer">
+        <div class="footer__title">
+          © Made by Kunturi Design. All rights reserved.
+        </div>
         <div class="footer__social-media">
           <a href="#">
             <svg
