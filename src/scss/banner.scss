@@ -83,7 +83,6 @@
     &__text{
       font-size: 6.2rem;
       margin: 0 7rem 0 0;
-      border: 1px solid $color-text;
       align-self: stretch;
       padding: 1rem;
       text-align: left;
@@ -91,5 +90,6 @@
   }
   .logos{
     border-top: 1px solid $color-bg-dark;
+    padding: 3rem 0;
   }
 }
