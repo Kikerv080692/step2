@@ -47,7 +47,6 @@
   border-top: 1px solid $color-text;
   &__title {
     text-align: center;
-    font-size: 8rem;
     font-weight: 300;
     line-height: normal;
     text-transform: uppercase;
@@ -55,7 +54,7 @@
     margin-bottom: 3rem;
     &--name {
       text-align: center;
-      font-size: 5rem;
+      font-size: 4rem;
       font-weight: 700;
       line-height: normal;
       text-transform: uppercase;
@@ -93,6 +92,15 @@
     
   }
 }
+@media screen and (min-width: 490px) {
+  .contact{
+    &__title{
+      &--name{
+        font-size: 5rem;
+      }
+    }
+  }
+}
 @media screen and (min-width: 768px) {
     .join{
         &__title{
@@ -128,7 +136,7 @@
 @media screen and (min-width: 1200px){
   .join{
     &__wrapper{
-      flex: 1 1 48%;
+      flex: 0 0 calc(50% - 2rem);
       display: flex;
       flex-direction: column;
       justify-content: center;

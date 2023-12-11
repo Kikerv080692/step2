@@ -15,18 +15,21 @@
   }
 }
 .container--page-title {
+  
   display: flex;
   justify-content: center;
   align-items: center;
 }
 .page-title {
   &__title {
+    text-align: center;
     font-size: 5.7rem;
     font-weight: 600;
     line-height: normal;
     text-transform: uppercase;
   }
   &__subtitle {
+    text-align: center;
     font-size: 5.7rem;
     font-weight: 300;
     text-transform: capitalize;

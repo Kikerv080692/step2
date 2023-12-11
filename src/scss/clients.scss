@@ -12,7 +12,6 @@
     }
   }
   &__title {
-    font-size: 8rem;
     font-weight: 300;
     line-height: normal;
     text-transform: uppercase;
@@ -39,8 +38,8 @@
     }
     &--footer {
       display: grid;
-      grid-template-columns: 10rem 25rem;
-      grid-template-rows: 4rem 4rem;
+      grid-template-columns: 10rem auto;
+      grid-template-rows: auto auto;
       grid-template-areas: "foto text" "foto prof";
       padding-top: 4rem;
       &-foto {
@@ -68,6 +67,16 @@
 .container-clients {
   display: flex;
   flex-direction: column;
+}
+@media screen and (min-width: 490px) {
+  .clients{
+    &__title{
+      &--footer{
+        grid-template-columns: 10rem 25rem;
+        grid-template-rows: 4rem 4rem;
+      }
+    }
+  }
 }
 @media screen and (min-width: 768px) {
     .clients{

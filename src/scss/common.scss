@@ -11,6 +11,16 @@ body {
   flex-direction: column;
   padding: 0 2rem;
 }
+.section-title{
+  font-size: 5rem;
+  line-height: 5rem;
+}
+@media screen and (min-width: 490px) {
+  .section-title{
+    font-size: 8rem;
+    line-height: 8rem;
+  }
+}
 @media screen and (min-width: 768px) {
   .container {
     padding: 0 3rem;
